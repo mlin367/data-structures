@@ -25,21 +25,6 @@ treeMethods.addChild = function(value) {
 };
 
 treeMethods.contains = function(target) {
-  // let isFound = false;
-  // let node = this;
-  // while(!isFound) {
-  //   if (node.value === target) {
-  //     isFound = true;
-  //   } else if (node.children.length !== 0) {
-  //     for (let child of node.children) {
-  //       isFound = child.value === target ? true : false;
-  //     }
-  //     node = node.children;
-  //   } else {
-  //     isFound = false;
-  //   }
-  // }
-  // return isFound;
   if (this.value === target) {
     return true;
   } else if (this.children.length !== 0) {
@@ -58,4 +43,7 @@ treeMethods.contains = function(target) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ addChild has a time complexity of O(1)
+ contains possibly has a time complexity of O(c^n) because of the recursive function and
+ potential for any amount of children for any given node
  */
