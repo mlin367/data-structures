@@ -48,4 +48,7 @@ var Node = function(value) {
 
 /*
  * Complexity: What is the time complexity of the above functions?
+ addToTail has a time complexity of O(1)
+ removeHead has a time complexity of O(1) only because it's the head, otherwise it'd be O(n)
+ contains has a time complexity of O(n) because you have to traverse the list to find the value
  */
