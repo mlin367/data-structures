@@ -46,7 +46,7 @@ HashTable.prototype.remove = function(k) {
       if (i === index) {
         buck.forEach((tuple, index) => {
           if (tuple[0] === k) {
-            delete storage[i][index];
+            storage[i].splice(index, 1);
           }
         });
       }
